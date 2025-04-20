@@ -1,0 +1,42 @@
+name: Python CI for Testing Automation
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run tests
+      run: |
+        pytest
+    
+    - name: 🚀 Run Locust in headless mode
+      run: |
+          locust -f locustfile.py --headless -u 10 -r 2 -t 10s --host http://localhost:8089/
+  
+    - name: 🧪 Run pytest with Allure
+      run: |
+          pytest --alluredir=allure-results
+  
+    - name: 📤 Upload Allure Report
+      uses: actions/upload-artifact@v3
+      with:
+          name: allure-results
+          path: allure-results
+  
