@@ -1,0 +1,8 @@
+Current URL after login: http://127.0.0.1:5000/
+Price IDs: [{'price': 'price_1JlBIQBZlBPWG6ECsPx49z0g', 'quantity': 1}, {'price': 'price_1JlBEmBZlBPWG6EC1i6RYpTB', 'quantity': 1}, {'price': 'price_1Jk8LrBZlBPWG6ECvsEjYsZF', 'quantity': 1}, {'price': 'price_1Jk8MUBZlBPWG6ECueOfWc9N', 'quantity': 1}]
+Grand Total: 
+Test failed with error: Grand total format is incorrect
+assert False
+ +  where False = <built-in method startswith of str object at 0x0000020C45514670>('$')
+ +    where <built-in method startswith of str object at 0x0000020C45514670> = ''.startswith
+Screenshot saved at: C:\Users\RAJAVEL\Desktop\virtusa\selinum base\screenshot\test_cart_price_details_failed.png

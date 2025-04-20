@@ -1,0 +1,3 @@
+Test failed with error: Message: 
+
+Screenshot saved at: D:\Prototype\selinum base\selinum base\screenshots\test_cart_price_details_failed.png

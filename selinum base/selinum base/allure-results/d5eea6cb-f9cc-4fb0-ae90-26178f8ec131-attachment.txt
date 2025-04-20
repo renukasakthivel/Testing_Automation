@@ -1,0 +1,25 @@
+Running test with: example2@gmail.com
+❌ Login failed for example2@gmail.com: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF71DA75355+78597]
+	GetHandleVerifier [0x00007FF71DA753B0+78688]
+	(No symbol) [0x00007FF71D8291AA]
+	(No symbol) [0x00007FF71D87F149]
+	(No symbol) [0x00007FF71D87F3FC]
+	(No symbol) [0x00007FF71D8D2467]
+	(No symbol) [0x00007FF71D8A712F]
+	(No symbol) [0x00007FF71D8CF2BB]
+	(No symbol) [0x00007FF71D8A6EC3]
+	(No symbol) [0x00007FF71D8703F8]
+	(No symbol) [0x00007FF71D871163]
+	GetHandleVerifier [0x00007FF71DD1EF0D+2870973]
+	GetHandleVerifier [0x00007FF71DD196B8+2848360]
+	GetHandleVerifier [0x00007FF71DD36993+2967875]
+	GetHandleVerifier [0x00007FF71DA9019A+188746]
+	GetHandleVerifier [0x00007FF71DA9847F+222255]
+	GetHandleVerifier [0x00007FF71DA7D2D4+111236]
+	GetHandleVerifier [0x00007FF71DA7D482+111666]
+	GetHandleVerifier [0x00007FF71DA635A9+5465]
+	BaseThreadInitThunk [0x00007FFD8FE07374+20]
+	RtlUserThreadStart [0x00007FFD9105CC91+33]
+
