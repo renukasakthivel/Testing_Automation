@@ -41,7 +41,8 @@ jobs:
 
     - name: 📤 Upload Allure Report
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3.1.3
       with:
-        name: allure-results
-        path: allure-results
+       name: allure-results
+       path: allure-results
+    
